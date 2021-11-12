@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.cpp": [
+      {
+        "id": "246a4aba-8c38-444a-93fa-ec08f6f927a0",
+        "line": 25,
+        "version": 1281,
+        "index": 816
+      }
+    ],
+    "melee.h": [
+      {
+        "id": "7357e6be-79e4-4bec-9690-d16bf2c99b17",
+        "line": 28,
+        "version": 0,
+        "index": 545
+      }
+    ]
+  }
+}
