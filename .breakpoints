@@ -1,11 +1,19 @@
 {
   "files": {
+    "Ranger.h": [
+      {
+        "id": "a92fb253-8716-4897-b39d-71654f7cad67",
+        "line": 21,
+        "version": 1164,
+        "index": 499
+      }
+    ],
     "main.cpp": [
       {
         "id": "246a4aba-8c38-444a-93fa-ec08f6f927a0",
-        "line": 25,
-        "version": 1281,
-        "index": 816
+        "line": 26,
+        "version": 1309,
+        "index": 835
       }
     ],
     "melee.h": [

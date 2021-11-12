@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Melee{
+class Ranger{
 private:
   string objeto;
   float daño;
@@ -18,14 +18,47 @@ public:
   float get_daño();
   float get_precioVenta();
   int get_ammoCapacity();
-  float rangoMaximo();
+  float get_rangoMaximo();
 
-  void objeto(string);
-  void daño(float);
-  void precioVenta(float);
-  void ammoCapacity(int);
-  void rangoMaximo(float);
+  void set_objeto(string);
+  void set_daño(float);
+  void set_precioVenta(float);
+  void set_ammoCapacity(int);
+  void set_rangoMaximo(float);
 };
+
+string Ranger::get_objeto(){
+  return objeto;
+}
+float Ranger::get_daño(){
+  return daño;
+}
+float Ranger::get_precioVenta(){
+  return precioVenta;
+}
+int Ranger::get_ammoCapacity(){
+  return ammoCapacity;
+}
+float Ranger::get_rangoMaximo(){
+  return rangoMaximo;
+}
+
+void Ranger::set_objeto(string obj){
+  objeto=obj;
+}
+void Ranger::set_daño(float dañ){
+  daño=dañ;
+}
+void Ranger::set_precioVenta(float precio){
+  precioVenta=precio;
+}
+void Ranger::set_ammoCapacity(int ammo){
+  ammoCapacity=ammo;
+}
+void Ranger::set_rangoMaximo(float rango){
+  rangoMaximo=rango;
+}
+
   
 
   
