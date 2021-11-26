@@ -1,4 +1,5 @@
-
+/*
+Ernesto Guillén Guerrero A01704967 */
 #include <string>
 
 using namespace std;

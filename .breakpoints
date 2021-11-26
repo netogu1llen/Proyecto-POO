@@ -3,17 +3,23 @@
     "Ranger.h": [
       {
         "id": "a92fb253-8716-4897-b39d-71654f7cad67",
-        "line": 21,
-        "version": 1164,
-        "index": 499
+        "line": 22,
+        "version": 1229,
+        "index": 526
       }
     ],
     "main.cpp": [
       {
+        "id": "838592f3-6d09-4d5f-b6e3-5d52da831f59",
+        "line": 11,
+        "version": 1913,
+        "index": 154
+      },
+      {
         "id": "246a4aba-8c38-444a-93fa-ec08f6f927a0",
-        "line": 26,
-        "version": 1309,
-        "index": 835
+        "line": 28,
+        "version": 1913,
+        "index": 876
       }
     ],
     "melee.h": [
