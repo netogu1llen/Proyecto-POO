@@ -1,5 +1,4 @@
-En este proyecto se tiene planeado crear una guia rápida para los jugadores del videojuego Terraria. 
+TC1033 Ernesto Guillén Guerrero 
+Proyecto POO 
 
-Se espera que el usuario pueda seleccionar entre los tipos de roles que el juego ofrece y nuestro programa pueda desplegarle una lista de los mejores objetos que puede conseguir para el mismo. 
-
-En posteriores versiones se implementará el menú interactivo con el que se pueda seleccionar y así crear varias combinaciones de builds y objetos. 
+Este proyecto esta diseñado para 

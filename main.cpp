@@ -2,51 +2,23 @@
 Ernesto Guillén Guerrero A01704967 */
 #include<iostream>
 #include<string>
-#include"Melee.h"
-#include"Mago.h"
-#include"Ranger.h"
+#include"MeleePadre.h"
 
 using namespace std;
 
 int main(){
-  Melee Armas("Espada de cobre",5,.5,60);
-  //objeto,daño,precioVenta,usosRestantes
-//////////
-  cout<<Armas.get_objeto()<<", daño por golpe: "<<Armas.get_daño()<<", se vende por "<<Armas.get_precioVenta()<<" de oro, cuenta con "<<Armas.get_usosRestantes()<<" usos restantes."<<endl;
-  
-  Armas.set_objeto("Bara de madera");
-  Armas.set_daño(1);
-  Armas.set_precioVenta(.01);
-  Armas.set_usosRestantes(10);
-  
-  cout<<Armas.get_objeto()<<", daño por golpe: "<<Armas.get_daño()<<", se vende por "<<Armas.get_precioVenta()<<" de oro, cuenta con "<<Armas.get_usosRestantes()<<" usos restantes."<<endl;
-
-
-//////////
-  Mago Utilidad("Bastón de rubí",2,15,30);
-  //objeto,precioVenta,curaVida,consumeMana
-//////////  
-  cout<<Utilidad.get_objeto()<<", se vende por "<<Utilidad.get_precioVenta()<<" de oro, cura "<<Utilidad.get_curaVida()<<" puntos de vida, consume "<<Utilidad.get_consumeMana()<<" puntos de maná."<<endl;
-
-  Utilidad.set_objeto("Vara innecesariamente grande");
-  Utilidad.set_precioVenta(20);
-  Utilidad.set_curaVida(150);
-  Utilidad.set_consumeMana(100);
-  
-  cout<<Utilidad.get_objeto()<<", se vende por "<<Utilidad.get_precioVenta()<<" de oro, cura "<<Utilidad.get_curaVida()<<" puntos de vida, consume "<<Utilidad.get_consumeMana()<<" puntos de maná."<<endl;
-//////////
-  Ranger Fusiles("Cañón de fuego rápido",7,2.5,40,12.5);
-  //objeto,daño,precioVenta,ammoCapacity,rangoMaximo
-//////////    
-  cout<<Fusiles.get_objeto()<<", se vende por "<<Fusiles.get_precioVenta()<<" de oro, cada disparo inflinge "<<Fusiles.get_daño()<<", tiene una capacidad de  "<<Fusiles.get_ammoCapacity()<<" balas y un alcance de  "<<Fusiles.get_rangoMaximo()<<" unidades."<<endl;
-
-  Fusiles.set_objeto("Cañón de estrellas");
-  Fusiles.set_precioVenta(50);
-  Fusiles.set_daño(300);
-  Fusiles.set_ammoCapacity(5);
-  Fusiles.set_rangoMaximo(40);
-
-  cout<<Fusiles.get_objeto()<<", se vende por "<<Fusiles.get_precioVenta()<<" de oro, cada disparo inflinge "<<Fusiles.get_daño()<<", tiene una capacidad de  "<<Fusiles.get_ammoCapacity()<<" balas y un alcance de  "<<Fusiles.get_rangoMaximo()<<" unidades."<<endl;
-}
-
-
+  //Datos de la primera espada.
+  EspadaHierro E1("Hierro",40,3.5,10,5);
+  cout<<"Espada de "<<E1.get_objeto()<<" inflinge "<<E1.get_danio()<<" de daño y se vende por "<<E1.get_precioVenta()<< " de oro. Al golpear al objetivo sangra por "<<E1.get_tiempoSangrado()<<" segundos y para crearse se necesitan "<<E1.get_lingotes()<<" lingotes de hierro."<<endl;
+  cout<<" "<<endl;
+  //Datos de la segunda espada.
+  Semillera P1("Semillera",55,4.2,3,10);
+  cout<<"La espada "<<P1.get_objeto()<<" inflinge "<<P1.get_danio()<<" de daño y se vende por "<<P1.get_precioVenta()<<" de oro. Al golpear al objetivo este crea "<<P1.get_numeroExplosiones()<<" numero de explosiones y planta "<< P1.get_plantaSemilla()<<" semillas en el suelo cerca del impacto"<<endl;
+  cout<<" "<<endl;
+  //Datos de la tercera espada.
+  ProyectilesDisparados PD1(3,2);
+  TerraBlade T1("Terrablade",80,11.5,8,PD1);
+  cout<<"La espada "<<T1.get_objeto()<<"inflinge "<<T1.get_danio()<<" de daño y se vende por "<<T1.get_precioVenta()<<" de oro. Al impactar el objetivo se quema por "<<T1.get_tiempoQuemadura()<<" segundos."<<endl; 
+  //Uso de la funcion para obtener la composición de la última espada.
+  T1.obtenerDatos();
+} 
